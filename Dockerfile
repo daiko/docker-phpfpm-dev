@@ -1,6 +1,6 @@
 FROM php:7-fpm
 
-RUN curl -o /tmp/xdebug.tgz https://xdebug.org/files/xdebug-2.5.0.tgz && \
+RUN curl -o /tmp/xdebug.tgz https://xdebug.org/files/xdebug-2.5.5.tgz && \
     mkdir -p /usr/src/php/ext/xdebug && \
     tar xzf /tmp/xdebug.tgz -C /usr/src/php/ext/xdebug/ && \
     rm /tmp/xdebug.tgz && \
